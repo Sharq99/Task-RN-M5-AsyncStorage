@@ -32,7 +32,7 @@ const Cart = () => {
         renderItem={renderItem}
         ListFooterComponent={Totals}
       />
-      <Button title="clear" onPress={() => {}} />
+      <Button title="clear" onPress={() => {cartStore.clearCart()}} />
     </View>
   );
 };
